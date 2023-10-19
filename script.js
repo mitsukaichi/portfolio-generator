@@ -30,7 +30,6 @@ inquirer
       },
   ])
   .then((response) => {
-
     fs.writeFile('index.html', `
     <!DOCTYPE html>
 <html lang="en">
@@ -58,9 +57,6 @@ inquirer
 <script src="script.js"></script>
 </body>
 </html>
-    
-    
-    
     `, (err) =>
     err ? console.error(err) : console.log('Success!')
     );
